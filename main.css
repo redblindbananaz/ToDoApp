@@ -30,7 +30,7 @@
 }
 
 body{  
-    max-width: 600px;
+    max-width: 700px;
     margin:0 auto;
     background-color: var(--bgdark-color); 
   
@@ -48,7 +48,8 @@ body{
 }
 
 .top{
-    background: linear-gradient(to bottom , var(--bg-color),var(--bgdark-color));    
+    background: linear-gradient(to bottom , var(--bgdark-color), var(--bg-color),var(--bgdark-color)); 
+
 }
 
 h3{
@@ -78,6 +79,7 @@ section{
     padding-right: 2rem;
 }
 
+
 .create-todo input[type="text"]{
     appearance:auto;
     display: block;
@@ -90,6 +92,9 @@ section{
     box-shadow: var(--shadow);
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
+}
+.create-todo ::placeholder{
+    font-style: italic;
 }
 
 .create-todo .options{
@@ -265,13 +270,93 @@ input:checked ~ .material-symbols-outlined {
 
 }
 
+/*#endregion*/
+/*#region THIS IS FOR MOBILE VERSION------------*/
+
+@media screen and (max-width: 668px){
+
+body{  
+    max-width: 600px;
+    margin:0 auto;
+    background-color: var(--bgdark-color); 
+    
+}
+.title{
+    font-size: 2rem;
+}
+h3{
+
+    font-size: 1.3rem;
+}
+h4{
+
+    font-size: 1rem;
+}
+.create-todo .options label {
+
+    font-size: 0.8rem;
+}
+
+.create-todo input[type="submit"]{
+
+    font-size:1rem;
+}
+.todo-content input{
+    
+    font-size: 0.8rem;
+}
+.create-todo input[type="text"]{
+
+    font-size: 0.8rem;
+
+}
+section{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+section .top{
+    margin-top:0.4rem;
+}
+
+.todo-content span{
+    padding-left: 0.5rem;
+
+}
+
+.todo-content{
+    display:flex;
+    min-width: 100px;
+    flex-direction: row;
+}
+
+#edit, #save{
+    margin-right:0.5rem;
+    font-weight: 250;
+}
+.todo-list .list{
+    margin: 0.5rem 0;
+}
+#edit{
+    color:var(--accentdark);
+}
+
+#delete{
+    color:red;
+    opacity:0.8;
+    font-weight: 250;
+}
+
+#save{
+    color:greenyellow;
+}
 
 
 
 
-
-
-
+}
 
 
 
