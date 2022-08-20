@@ -77,7 +77,6 @@ window,addEventListener('load',()=>{
 
         const inputItem = document.createElement('input');
         inputItem.type = 'text';
-        inputItem.size ='25';
         inputItem.setAttribute('readonly', "readonly");
         inputItem.value = task;
         todoContent.appendChild(inputItem);
